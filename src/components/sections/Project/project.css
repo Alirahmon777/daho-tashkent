@@ -1,0 +1,64 @@
+.project {
+  padding-top: 4rem;
+  position: relative;
+}
+
+.project::before {
+  content: '';
+  position: absolute;
+  top: 9.2rem;
+  width: 0;
+  height: 0;
+  left: 0;
+  border-style: solid;
+  border-width: 15rem 0 15rem 15rem;
+  border-color: transparent transparent transparent #fdf8ef;
+  z-index: -1;
+}
+
+.project::after {
+  content: '';
+  position: absolute;
+  top: -17rem;
+  width: 0;
+  height: 0;
+  right: 0;
+  border-style: solid;
+  border-width: 15rem 15rem 15rem 0;
+  border-color: transparent #fdf8ef transparent transparent;
+  z-index: -1;
+}
+
+.project__content {
+  max-width: 38rem;
+  margin: 0 auto 3rem;
+  text-align: center;
+}
+
+.project__title {
+  font-size: 2.75rem;
+  color: var(--brown);
+  font-family: 'Din Pro', sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.project__sub__title {
+  font-size: 1.5rem;
+  color: var(--brown);
+  margin: 0 auto 1rem;
+}
+
+.project__image {
+  overflow: hidden;
+}
+
+.project__image img {
+  object-fit: cover;
+  width: 100%;
+  animation: scale 40s linear infinite;
+}
+
+.project__desc {
+  color: var(--blue);
+}

@@ -1,0 +1,21 @@
+.infrastructure {
+  padding-top: 5rem;
+  overflow-x: hidden;
+}
+
+.infrastructure__wrapper {
+  position: relative;
+}
+
+.infrastructure__wrapper::before {
+  content: '';
+  position: absolute;
+  top: -5rem;
+  width: 0;
+  height: 0;
+  right: 0;
+  border-style: solid;
+  border-width: 0 15rem 15rem 0;
+  border-color: transparent #fdf8ef transparent transparent;
+  z-index: -1;
+}

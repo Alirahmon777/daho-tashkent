@@ -1,0 +1,28 @@
+.progress {
+  padding-top: 3rem;
+  padding-bottom: 1.5rem;
+  overflow-x: hidden;
+}
+
+.progress__content {
+  width: 40%;
+  padding-right: 1rem;
+}
+
+.progress__carousel {
+  width: 58%;
+  box-shadow: 0 0.15rem 1rem rgba(0, 0, 0, 0.16);
+}
+
+.progress__title {
+  font-size: 2.2rem;
+  margin-bottom: 3rem;
+  color: var(--brown);
+  font-family: 'Din Pro', sans-serif;
+  text-transform: uppercase;
+}
+
+.progress__desc {
+  margin-bottom: 1.5rem;
+  color: var(--blue);
+}

@@ -1,0 +1,31 @@
+.advantages {
+  padding-top: 5rem;
+  overflow-x: hidden;
+}
+
+.advantages__carousel img {
+  width: 67vw;
+  height: 40rem;
+  object-fit: cover;
+}
+
+.advantages__content {
+  width: 33%;
+  padding: 4rem;
+  text-align: right;
+}
+
+.advantages__title {
+  margin-bottom: 2.5rem;
+  font-size: 2.5rem;
+  line-height: normal;
+  color: var(--brown);
+  font-family: 'Din Pro', sans-serif;
+  text-transform: uppercase;
+}
+
+.advantages__desc {
+  font-size: 1rem;
+  line-height: normal;
+  color: var(--blue);
+}

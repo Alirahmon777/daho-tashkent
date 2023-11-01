@@ -1,0 +1,37 @@
+.corporative {
+  padding-top: 5rem;
+  overflow-x: hidden;
+}
+
+.corporative__wrapper {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  margin-bottom: 5rem;
+}
+
+.corporative__wrapper::before {
+  content: '';
+  position: absolute;
+  top: -5rem;
+  width: 0;
+  height: 0;
+  left: 0;
+  border-style: solid;
+  border-width: 15rem 15rem 0 0;
+  border-color: #fdf8ef transparent transparent transparent;
+  z-index: -1;
+}
+
+.corporative__wrapper::after {
+  content: '';
+  position: absolute;
+  bottom: -5rem;
+  width: 0;
+  height: 0;
+  right: 0;
+  border-style: solid;
+  border-width: 0 0 15rem 15rem;
+  border-color: transparent transparent #fdf8ef transparent;
+  z-index: -1;
+}

@@ -1,0 +1,55 @@
+.location {
+  padding-top: 5rem;
+  overflow-x: hidden;
+  margin-bottom: 5rem;
+}
+
+.location__content {
+  width: 35%;
+  padding: 3rem;
+  margin-top: 5rem;
+}
+
+.location__title {
+  color: #c99e66;
+  font-size: 2.3rem;
+  margin-bottom: 1.5rem;
+  font-family: 'Din Pro', sans-serif;
+}
+
+.location__desc {
+  font-size: 1rem;
+  color: var(--blue);
+}
+
+.location__image {
+  width: 65%;
+}
+
+.location__maptitle {
+  color: var(--brown);
+  margin-bottom: 3rem;
+  font-size: 3rem;
+  font-family: 'Din Pro', sans-serif;
+}
+
+.location__btn {
+  margin-top: 3rem;
+  width: 13.5rem;
+  -webkit-transition: 0.6s all;
+  transition: 0.6s all;
+  color: var(--white);
+  border: 1px solid var(--brown);
+  background: var(--brown);
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 3rem;
+  font-size: 0.8rem;
+}
