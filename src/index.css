@@ -224,6 +224,16 @@ body {
     padding: 0 3rem;
   }
 
+  .mobile-menu__nova {
+    text-align: center;
+    margin-top: 2rem;
+  }
+
+  .mobile-menu__nova img {
+    width: 7rem;
+    display: inline-block;
+  }
+
   .apartment__main::after {
     top: auto;
     bottom: 0;
