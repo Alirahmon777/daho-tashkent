@@ -63,24 +63,7 @@
 .feedback-form__input {
   margin-bottom: 1.2rem;
 }
-.feedback-form__input .iti {
-  width: 100%;
-}
-.feedback-form__input .iti__country-list {
-  background: #142939;
-  width: 17.5rem;
-}
-.feedback-form__input .iti__country-list::-webkit-scrollbar {
-  width: 0.4rem;
-  height: 0.4rem;
-}
-.feedback-form__input .iti__country-list::-webkit-scrollbar-track {
-  background: rgba(255, 255, 255, 0.05);
-}
-.feedback-form__input .iti__country-list::-webkit-scrollbar-thumb {
-  background: #c99e66;
-  width: 0.4rem;
-}
+
 .feedback-form__input span {
   display: block;
   margin-bottom: 0.7rem;
@@ -99,14 +82,45 @@
   display: block;
 }
 .feedback-form__input input::placeholder {
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.5) !important;
 }
 
+.feedback-form__input .feedback-form__input-name {
+  padding: 0.8rem 0.4rem !important;
+}
 
+.feedback-form__input .react-international-phone-input,
+.feedback-form__input button {
+  background: transparent !important;
+}
 
 .feedback-form__input button {
+  height: auto !important;
   padding: 0 !important;
+  padding: 0.6rem 0.4rem !important;
+  border-right: 1px solid rgba(255, 255, 255, 0.2) !important;
   padding-left: 10px !important;
+}
+
+.feedback-form__input button:hover {
+  background: #00000020 !important;
+}
+
+.react-international-phone-input-container {
+  background: rgba(255, 255, 255, 0.21) !important;
+}
+
+.feedback-form__input .react-international-phone-input-container {
+  align-items: center;
+}
+
+.react-international-phone-country-selector-button__dropdown-arrow {
+  margin-left: 1px !important;
+  width: 0;
+  height: 0;
+  border-left: 3px solid transparent !important;
+  border-right: 3px solid transparent !important;
+  border-top: 4px solid #c99e66 !important;
 }
 
 .feedback__btn {

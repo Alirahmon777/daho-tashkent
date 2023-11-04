@@ -30,7 +30,7 @@ const FeedbackModal = () => {
           <form className='feedback-form' action='#'>
             <div className='feedback-form__input'>
               <span>Ismingiz</span>
-              <input type='text' required='' placeholder='Ismingiz' id='name' />
+              <input type='text' required placeholder='Ismingiz'  className='feedback-form__input-name' id='name' />
             </div>
             <div className='feedback-form__input'>
               <span>Telefon raqamingiz</span>

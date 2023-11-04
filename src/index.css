@@ -14,6 +14,8 @@
   --brown: #c99e66;
   --white: #fff;
   --blue: #14395b;
+  --react-international-phone-country-selector-arrow-color: #c99e66;
+  --react-international-phone-height: auto;
 }
 
 *,
@@ -191,11 +193,21 @@ body {
   .custom__container {
     padding: 0 4rem;
   }
+
+  .feedback-form__input .react-international-phone-flag-emoji {
+    width: 16px;
+    height: 16px;
+  }
 }
 
 @media (max-width: 1150.98px) {
   :root {
     font-size: 12px;
+  }
+
+  .feedback-form__input .react-international-phone-flag-emoji {
+    width: 12px;
+    height: 12px;
   }
 }
 
@@ -275,6 +287,11 @@ body {
     -ms-flex-direction: column-reverse;
     flex-direction: column-reverse;
   }
+
+  .feedback-form__input .react-international-phone-flag-emoji {
+    width: 11px;
+    height: 11px;
+  }
 }
 
 @media (max-width: 767.98px) {
@@ -296,6 +313,11 @@ body {
   .room__info {
     width: 100%;
     padding: 1.4rem;
+  }
+
+  .feedback-form__input .react-international-phone-flag-emoji {
+    width: 10px;
+    height: 10px;
   }
 }
 
