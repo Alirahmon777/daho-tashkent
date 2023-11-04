@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { Header, Footer, Main } from 'components';
+import { Header, Footer, Main, Feedback } from 'components';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 function App() {
@@ -9,6 +9,7 @@ function App() {
   }, []);
   return (
     <>
+      <Feedback />
       <Header />
       <Main />
       <Footer />

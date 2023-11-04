@@ -11,8 +11,8 @@ const Footer = () => {
         <div className='footer__info'>
           <img src={FooterLogoIcon} alt='' className='footer__logo' />
           <ul className='footer__socials flex justify-center gap-1.5'>
-            {footer.socials.map(({ path, icon: Icon }) => (
-              <li className='footer__item'>
+            {footer.socials.map(({ path, icon: Icon }, i) => (
+              <li className='footer__item' key={i}>
                 <Link to={path}>
                   <Icon className='cursor-pointer' />
                 </Link>

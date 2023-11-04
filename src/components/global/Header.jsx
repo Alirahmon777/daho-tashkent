@@ -1,14 +1,16 @@
-import React, { useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import { LogoIcon, phoneIcon } from 'assets';
 import { header } from 'static/data';
 import 'assets/styles/header.css';
 import MobileMenu from '../MobileMenu';
 import { scrollToComponent } from '../../utils/scrollToComponents';
+import { FeedbackContext } from '../../context/FeedbackContext';
 
 const Header = () => {
   const [open, setOpen] = useState(false);
   const [scrollTop, setScrollTop] = useState(false);
+  const { setOpenFeedback } = useContext(FeedbackContext);
   useEffect(() => {
     window.addEventListener('scroll', isSticky);
     return () => {
@@ -22,7 +24,7 @@ const Header = () => {
   };
   return (
     <>
-      {open && <MobileMenu />}
+      <MobileMenu open={open} />
       <header className={`${scrollTop && 'scrolled'} header text-white fixed top-0 left-0 w-full z-50 py-[1.25rem]`}>
         <div className='custom__container flex items-center justify-between w-full'>
           <img src={LogoIcon} alt='logo' className={`transition-all duration-[600] header__logo`} />
@@ -47,9 +49,10 @@ const Header = () => {
                     <>
                       {name}
                       <div className='submenu'>
-                        {child.map(({ component_id, name }) => (
+                        {child.map(({ component_id, name }, i) => (
                           <NavLink
                             to={component_id}
+                            key={i}
                             onClick={() => scrollToComponent(component_id.substring(1))}
                             className={({ isActive }) => (isActive ? 'text-' : 'header__nav__link')}
                           >
@@ -75,7 +78,10 @@ const Header = () => {
               <img src={phoneIcon} alt='' width={19} height={20} className='w-[0.9rem] h-[20px]' />
               55 506 00 00
             </Link>
-            <button className='bg-[var(--brown)] border-[0.1rem] border-white px-[16px] lg:px-[24px] py-[2px] text-[0.5rem] lg:text-[0.7rem] 2xl:text-[0.8rem]'>
+            <button
+              onClick={() => setOpenFeedback(true)}
+              className='bg-[var(--brown)] border-[0.1rem] border-white px-[16px] lg:px-[24px] py-[2px] text-[0.5rem] lg:text-[0.7rem] 2xl:text-[0.8rem]'
+            >
               Ariza qoldiring
             </button>
           </div>

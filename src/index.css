@@ -36,6 +36,30 @@ body {
   padding: 0 5rem;
 }
 
+.room__img {
+  display: block;
+  max-height: 30rem;
+  width: 100%;
+  object-fit: contain;
+}
+
+.room__info {
+  padding: 2rem 3rem;
+  border: 1px solid #707070;
+  border-radius: 0.5rem 0 0 0.5rem;
+  background: rgba(23, 27, 37, 0.75);
+  -webkit-backdrop-filter: blur(1.35rem);
+  backdrop-filter: blur(1.35rem);
+  width: 40%;
+}
+
+.room__title {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: var(--brown);
+  font-weight: 700;
+}
+
 @media (max-width: 2800.98px) {
   :root {
     font-size: 26px;
@@ -81,34 +105,143 @@ body {
     font-size: 14px;
   }
 }
+
 @media (max-width: 1300.98px) {
   :root {
     font-size: 13px;
   }
-}
 
-@media (max-width: 1200px) {
   .custom__container {
     padding: 0 4rem;
   }
 }
-@media (max-width: 1024px) {
-  .custom__container {
-    padding: 0 2.8rem;
+
+@media (max-width: 1150.98px) {
+  :root {
+    font-size: 12px;
   }
 }
-@media (max-width: 800.98px) {
+
+@media (max-width: 1000.98px) {
+  :root {
+    font-size: 11px;
+  }
+
   .custom__container {
-    padding: 0 1.6rem;
+    padding: 0 3rem;
   }
 }
+
+@media (max-width: 900.98px) {
+  :root {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 767.98px), (max-width: 1080px) and (orientation: portrait) {
+  :root {
+    font-size: 16px;
+  }
+
+  .custom__container {
+    padding: 0 3rem;
+  }
+
+  .apartment__main::after {
+    top: auto;
+    bottom: 0;
+    width: 100%;
+    height: 35%;
+  }
+
+  .apartment__main {
+    padding: 1.4rem 1.4rem 2.5rem;
+  }
+
+  .room__img-box {
+    margin-left: 0;
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .room__info {
+    width: 85%;
+    border-radius: 0 0 0.5rem 0.5rem;
+  }
+
+  .apartment__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .apartment__title {
+    width: 100%;
+    -ms-flex-item-align: start;
+    align-self: flex-start;
+    margin-bottom: 2rem;
+  }
+
+  .room__carousel {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+  }
+}
+
+@media (max-width: 767.98px) {
+  :root {
+    font-size: 14px;
+  }
+
+  .custom__container {
+    padding: 0 1.4rem;
+  }
+
+  .feedback-close {
+    top: 0.5rem;
+    right: 0.5rem;
+  }
+  .apartment__title {
+    font-size: 1.9rem;
+  }
+  .room__info {
+    width: 100%;
+    padding: 1.4rem;
+  }
+}
+
 @media (max-width: 500.98px) {
   .custom__container {
     padding: 0 1.2rem;
   }
 }
-@media (max-width: 300px) {
+
+@media (max-width: 343.98px) {
+  :root {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 300.98px) {
+  :root {
+    font-size: 10px;
+  }
+
   .custom__container {
     padding: 0 1rem;
+  }
+}
+
+@media (max-width: 1000px) and (orientation: landscape) {
+  :root {
+    font-size: 8.5px;
+  }
+}
+
+@media (max-width: 700px) and (orientation: landscape) {
+  :root {
+    font-size: 8px;
   }
 }

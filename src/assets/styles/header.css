@@ -55,7 +55,14 @@
   width: 100%;
   height: 100%;
   z-index: 10;
+  overflow: hidden;
   background: #00263a;
+  transition: transform 0.6s ease-in-out;
+  transform: translateY(-100%);
+}
+
+.mobile-menu.open {
+  transform: translateY(0);
 }
 
 .footer-info__social {

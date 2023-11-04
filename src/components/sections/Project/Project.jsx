@@ -8,10 +8,11 @@ const Project = () => {
       <div className='project__content'>
         <h2
           className='project__title'
-          data-aos-delay='0.2s'
+          data-aos-delay='200'
           style={{ animationName: 'fadeInUp', animationDelay: '0.2s' }}
           data-aos='fade-up'
           data-aos-easing='ease'
+          data-aos-offset='400'
           data-aos-duration='700'
           data-aos-once='true'
         >
@@ -19,10 +20,11 @@ const Project = () => {
         </h2>
         <h3
           className='project__sub__title'
-          data-aos-delay='0.3s'
+          data-aos-delay='300'
           data-aos='fade-up'
           style={{ animationName: 'fadeInUp', animationDelay: '0.3s' }}
           data-aos-easing='ease'
+          data-aos-offset='400'
           data-aos-duration='900'
           data-aos-once='true'
         >
@@ -30,10 +32,11 @@ const Project = () => {
         </h3>
         <p
           className='project__desc'
-          data-aos-delay='0.4s'
+          data-aos-delay='400'
           style={{ animationName: 'fadeInUp', animationDelay: '0.4s' }}
           data-aos='fade-up'
           data-aos-easing='ease'
+          data-aos-offset='400'
           data-aos-duration='1100'
           data-aos-once='true'
         >
@@ -44,10 +47,11 @@ const Project = () => {
       </div>
       <div
         className='project__image'
-        data-aos-delay='0.5s'
+        data-aos-delay='500'
         style={{ animationName: 'fadeInUp', animationDelay: '0.5s' }}
         data-aos='fade-up'
         data-aos-easing='ease'
+        data-aos-offset='400'
         data-aos-duration='1300'
         data-aos-once='true'
       >

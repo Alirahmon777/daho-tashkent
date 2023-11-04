@@ -3,9 +3,14 @@
   overflow-x: hidden;
 }
 
-.advantages__carousel img {
+.advantages__carousel {
   width: 67vw;
+  object-fit: cover;
+}
+
+.advantages__carousel img {
   height: 40rem;
+  width: 100%;
   object-fit: cover;
 }
 
@@ -28,4 +33,29 @@
   font-size: 1rem;
   line-height: normal;
   color: var(--blue);
+}
+
+@media (max-width: 767.98px) {
+  .advantages {
+    padding-top: 1.5rem;
+  }
+  .advantages__content,
+  .advantages__carousel {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .advantages__title {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+
+  .advantages__carousel img {
+    height: 22rem;
+  }
+
+  .advantages__content {
+    padding: 2rem 1.4rem;
+    text-align: right;
+  }
 }

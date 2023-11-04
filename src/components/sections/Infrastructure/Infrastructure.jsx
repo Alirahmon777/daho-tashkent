@@ -1,15 +1,41 @@
 import React from 'react';
 import './infrastructure.css';
-import { infrastructureOne } from 'assets';
+import { infrastructureCarousel } from '../../../static/data';
+import Swiper from '../../Swiper';
+import { SwiperSlide } from 'swiper/react';
 
 const Infrastructure = () => {
   return (
     <section className='infrastructure'>
-      <div className='infrastructure__wrapper flex items-center justify-between'>
-        <div className='advantages__carousel'>
-          <img src={infrastructureOne} alt='image' />
+      <div className='infrastructure__wrapper flex md:flex-row flex-col-reverse items-center justify-between'>
+        <div
+          className='advantages__carousel'
+          style={{ animationName: 'fadeInLeft', animationDelay: '0.3s' }}
+          data-aos='fade-right'
+          data-aos-easing='ease-in-sine'
+          data-aos-once='true'
+          data-aos-offset='400'
+          data-aos-duration='1100'
+          data-aos-delay='300'
+        >
+          <Swiper>
+            {infrastructureCarousel.map(({ image, name }, i) => (
+              <SwiperSlide key={i}>
+                <img src={image} alt={name} />
+              </SwiperSlide>
+            ))}
+          </Swiper>
         </div>
-        <div className='advantages__content text-left'>
+        <div
+          className='advantages__content text-right md:text-left'
+          style={{ animationName: 'fadeInRight', animationDelay: '0.4s' }}
+          data-aos='fade-left'
+          data-aos-easing='ease-in-sine'
+          data-aos-offset='400'
+          data-aos-once='true'
+          data-aos-duration='1100'
+          data-aos-delay='300'
+        >
           <h2 className='advantages__title'>RIVOJLANGAN INFRATUZILMA</h2>
           <p className='advantages__desc'>
             DAhO majmuasida keng yerosti avtoturargohi, shuningdek, sport va dam olish joylari koʻzda tutilgan.

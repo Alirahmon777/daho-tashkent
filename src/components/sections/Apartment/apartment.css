@@ -1,0 +1,62 @@
+.apartment {
+  padding: 5rem 0;
+  background: radial-gradient(circle, #f8f2e9 0%, #dbcfbd 0%, #dbcfbd 100%);
+  color: #fff;
+  overflow-x: hidden;
+}
+
+.apartment__main {
+  position: relative;
+  z-index: 1;
+  padding: 2.5rem 3rem 1rem;
+  background: #fff;
+}
+
+.apartment__title {
+  width: 50%;
+  font-size: 2.4rem;
+  font-family: 'Din Pro', sans-serif;
+}
+
+.apartment .swiper-slide:active {
+  cursor: grab;
+  cursor: -moz-grab;
+  cursor: -webkit-grab;
+}
+
+.apartment .swiper-pagination-bullets {
+  position: absolute;
+  left: 280px !important;
+  bottom: 0;
+  z-index: 10000;
+  text-align: center;
+}
+
+.apartment .swiper-pagination-bullet {
+  left: 10%;
+  width: 8px;
+  height: 8px;
+  border: 1px solid var(--brown);
+  margin-right: 3px !important;
+  opacity: 1;
+  background: transparent;
+  outline: none;
+}
+
+.apartment .swiper-pagination-bullet-active {
+  width: 16px;
+  height: 8px;
+  border-radius: 10px;
+  background: var(--brown);
+}
+
+.apartment__main::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 12rem;
+  height: 100%;
+  background: #171b25;
+  z-index: -1;
+  content: '';
+}

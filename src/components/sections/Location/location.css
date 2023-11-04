@@ -14,6 +14,7 @@
   color: #c99e66;
   font-size: 2.3rem;
   margin-bottom: 1.5rem;
+  line-height: normal;
   font-family: 'Din Pro', sans-serif;
 }
 
@@ -52,4 +53,48 @@
   align-items: center;
   height: 3rem;
   font-size: 0.8rem;
+}
+
+@media (max-width: 767.98px) {
+  .location {
+    padding-top: 1.5rem;
+  }
+  .location__content,
+  .location__image {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 0;
+  }
+
+  .location__title {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+
+  .location__btn {
+    margin-top: 2.5rem;
+  }
+}
+
+@media (max-width: 425.98px) {
+  .location__content,
+  .location__image {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 0;
+  }
+
+  .location__content {
+    padding: 1.3rem;
+    padding-top: 2rem;
+  }
+
+  .location__title {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+
+  .location__btn {
+    margin-top: 2.5rem;
+  }
 }

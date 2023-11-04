@@ -5,6 +5,8 @@ import {
   ProjectSection,
   AdvantagesSection,
   CorporativeSection,
+  ApartmentSection,
+  OfficeSection,
   InfrastructureSection,
   LocationSection,
 } from 'components';
@@ -16,7 +18,9 @@ const Main = () => {
       <ProgressSection />
       <ProjectSection />
       <AdvantagesSection />
+      <ApartmentSection />
       <CorporativeSection />
+      <OfficeSection />
       <InfrastructureSection />
       <LocationSection />
     </main>

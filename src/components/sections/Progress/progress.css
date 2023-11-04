@@ -26,3 +26,26 @@
   margin-bottom: 1.5rem;
   color: var(--blue);
 }
+
+@media (max-width: 767.98px) {
+  .progress .custom__container {
+    padding: 0;
+  }
+  .progress__content,
+  .progress__carousel {
+    width: 100%;
+  }
+
+  .progress__content {
+    padding: 1rem;
+  }
+
+  .progress__carousel img {
+    height: 22rem;
+  }
+
+  .progress__title {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+}
