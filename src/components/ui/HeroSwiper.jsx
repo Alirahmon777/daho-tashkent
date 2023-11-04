@@ -7,8 +7,10 @@ import 'swiper/css/pagination';
 import 'swiper/css/effect-fade';
 import 'swiper/css/scrollbar';
 import { heroCarousel } from 'static/data';
+import { useTranslation } from 'react-i18next';
 
 export default ({ children, ...props }) => {
+  const { t } = useTranslation();
   return (
     <Swiper
       modules={[Pagination, Scrollbar, A11y, Autoplay, EffectFade]}
@@ -27,7 +29,7 @@ export default ({ children, ...props }) => {
               <img src={image} alt={name} className='w-full' />
             </div>
             <h2 className='hero-item__text md:text-[2.30rem] lg:text-[2.6rem] xl:text-[2.75rem]'>
-              DAhO – TOSHKENTNING YANGI DURDONASI
+              {t('hero_title', { ns: 'home' })}
             </h2>
           </div>
         </SwiperSlide>

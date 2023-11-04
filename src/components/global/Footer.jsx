@@ -3,8 +3,10 @@ import { Link } from 'react-router-dom';
 import { FooterLogoIcon, novaIcon } from 'assets';
 import 'assets/styles/footer.css';
 import { footer } from 'static/data';
+import { useTranslation } from 'react-i18next';
 
 const Footer = () => {
+  const { t, i18n } = useTranslation();
   return (
     <footer className='footer' id='footer'>
       <div className='footer__content'>
@@ -22,16 +24,16 @@ const Footer = () => {
         </div>
         <div className='footer__contact'>
           <p className='footer__contact__text'>
-            <span>Manzil: </span>
-            Taras Shevchenko ko'chasi, 23-uy
+            <span>{t('footer_address_span', { ns: 'layout' })} </span>
+            {t('footer_address', { ns: 'layout' })}
           </p>
           <p className='footer__contact__text'>
-            <span>Tel: </span>
+            <span>{t('footer_tel', { ns: 'layout' })} </span>
 
             <Link to={'tel:998555060000'}> +998 55 506 00 00</Link>
           </p>
           <p className='footer__contact__text'>
-            <span>Email: </span>
+            <span>{t('footer_email', { ns: 'layout' })} </span>
 
             <Link to={'mailto:info@dahotashkent.uz'}> info@dahotashkent.uz</Link>
           </p>
@@ -43,7 +45,12 @@ const Footer = () => {
           <Link to={'https://www.novastudio.uz/'} target='_blank' className='footer__nova-link'>
             <img src={novaIcon} alt='novas' className='footer__nova' />
           </Link>
-          <p className='footer__privacy'>Terms & Condition | Privacy Policy</p>
+          <p className='footer__privacy'>
+            Terms & Condition |{' '}
+            <Link to={'/policy'} className='hover:text-[var(--blue)] transition-all duration-500'>
+              Privacy Policy
+            </Link>
+          </p>
         </div>
       </div>
     </footer>

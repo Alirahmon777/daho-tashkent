@@ -2,9 +2,11 @@ import React, { useContext } from 'react';
 import './location.css';
 import { mapUz } from 'assets';
 import { FeedbackContext } from '../../../context/FeedbackContext';
+import { useTranslation } from 'react-i18next';
 
 const Location = () => {
   const { setOpenFeedback } = useContext(FeedbackContext);
+  const { t, i18n } = useTranslation();
   return (
     <section className='location' id='location'>
       <div className='location__wrapper flex items-center md:flex-row flex-col-reverse justify-between'>
@@ -18,14 +20,10 @@ const Location = () => {
           data-aos-duration='800'
           data-aos-delay='300'
         >
-          <h2 className='location__title'>SHAHAR MARKAZIDA, FAOL HAYOT OG‘USHIDA</h2>
-          <p className='location__desc'>
-            Noyob joylashuv poytaxtning ijtimoiy ahamiyatga ega maskanlariga: markaziy ko‘chalar, maktablar, klinikalar,
-            temiryo‘l vokzali, aeroport, banklar, bog‘lar, muzeylar, kafe va restoranlarga tezkor va qulay tarzda yetib
-            olish imkonini beradi.
-          </p>
+          <h2 className='location__title'>{t('location_title', { ns: 'home' })}</h2>
+          <p className='location__desc'>{t('location_desc', { ns: 'home' })}</p>
           <button className='location__btn' onClick={() => setOpenFeedback(true)}>
-            Ariza qoldiring
+            {t('header_btn', { ns: 'layout' })}
           </button>
         </div>
         <div
@@ -38,7 +36,7 @@ const Location = () => {
           data-aos-duration='800'
           data-aos-delay='300'
         >
-          <h3 className='text-center location__maptitle'>Lokatsiya</h3>
+          <h3 className='text-center location__maptitle'> {t('location', { ns: 'layout' })}</h3>
           <img src={mapUz} alt='' />
         </div>
       </div>

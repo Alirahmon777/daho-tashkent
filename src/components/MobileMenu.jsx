@@ -4,7 +4,7 @@ import { Link, NavLink } from 'react-router-dom';
 import { novaIcon } from 'assets';
 import { scrollToComponent } from '../utils/scrollToComponents';
 
-const MobileMenu = ({ open }) => {
+const MobileMenu = ({ open, setOpen }) => {
   return (
     <div className={`mobile-menu md:hidden ${open ? 'open' : ''}`}>
       <div className='mobile-menu__wrap text-center'>
@@ -12,7 +12,7 @@ const MobileMenu = ({ open }) => {
           {header.nav.map(({ component_id, name, child }, i) => (
             <React.Fragment key={i}>
               {!child && (
-                <li key={i} className='mb-[1.3rem]'>
+                <li key={i} className='mb-[1.3rem]' onClick={() => setOpen(false)}>
                   <NavLink
                     to={component_id}
                     className='header__nav__link uppercase'
@@ -25,7 +25,7 @@ const MobileMenu = ({ open }) => {
 
               {child &&
                 child.map(({ component_id, name }, i) => (
-                  <li className='mb-[1.3rem]' key={i}>
+                  <li className='mb-[1.3rem]' key={i} onClick={() => setOpen(false)}>
                     <NavLink
                       to={component_id}
                       className='header__nav__link uppercase'
@@ -39,12 +39,16 @@ const MobileMenu = ({ open }) => {
           ))}
         </ul>
         <div className='mobile-menu__lang text-[1rem] text-white my-8'>
-          <Link href='/' className='mr-[1rem]'>
+          <a
+            href='/'
+            className='mr-[1rem] hover:text-[--brown] transition-all duration-500'
+            onClick={() => setOpen(false)}
+          >
             Ру
-          </Link>
-          <Link href='/uz' className='current'>
+          </a>
+          <a href='/uz' className='hover:text-[--brown] transition-all duration-500' onClick={() => setOpen(false)}>
             Uz
-          </Link>
+          </a>
         </div>
         <div className='header-tel mt-5'>
           <button className='bg-[var(--brown)] border-[0.1rem] text-white border-white px-[20px] py-1 text-[1rem]'>

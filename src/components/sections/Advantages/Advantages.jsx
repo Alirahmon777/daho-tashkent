@@ -3,7 +3,9 @@ import './advantages.css';
 import { SwiperSlide } from 'swiper/react';
 import { advantagesCarousel } from 'static/data';
 import Swiper from '../../Swiper';
+import { useTranslation } from 'react-i18next';
 const Advantages = () => {
+  const { t } = useTranslation();
   return (
     <section className='advantages' id='gallery'>
       <div className='advantages__wrapper flex md:flex-row flex-col-reverse items-center'>
@@ -35,11 +37,8 @@ const Advantages = () => {
           data-aos-duration='1300'
           data-aos-delay='300'
         >
-          <h2 className='advantages__title'>AQL BILAN AMALGA OSHIRILGAN LOYIHA</h2>
-          <p className='advantages__desc'>
-            DAhO apartamentlarini loyihalashda konseptual yondashilgan bo‘lib, sizning bo‘lajak uyingizning har bir
-            burchagi turli xildagi loyihalashtirishda ham foydali va qulay bo‘lib qoladi.
-          </p>
+          <h2 className='advantages__title'>{t('advantage_title', { ns: 'home' })}</h2>
+          <p className='advantages__desc'>{t('advantage_desc', { ns: 'home' })}</p>
         </div>
       </div>
     </section>

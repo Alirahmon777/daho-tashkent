@@ -2,20 +2,21 @@ import React, { useState } from 'react';
 import './office.css';
 import { officeTabData } from '../../../static/data';
 import AppartmentSwiper from '../../ui/AppartmentSwiper';
+import { useTranslation } from 'react-i18next';
 
 const Office = () => {
   const [activeTab, setActiveTab] = useState(0);
-
+  const { t, i18n } = useTranslation();
   const handleTabClick = index => {
     setActiveTab(index);
   };
 
   return (
-    <section className='apartment' id='apartments'>
+    <section className='apartment' id='offices'>
       <div className='custom__container'>
         <div className='apartment__wrapper'>
           <div className='apartment__content flex justify-between items-center'>
-            <h2 className='apartment__title'>PlANIROVKA TURLARI</h2>
+            <h2 className='apartment__title'>{t('office_title', { ns: 'home' })}</h2>
             <ul className='flex'>
               {officeTabData.map((tab, index) => (
                 <li
@@ -26,7 +27,7 @@ const Office = () => {
                   onClick={() => handleTabClick(index)}
                 >
                   {tab.name}
-                  <span className='text-[1rem]'>ofis</span>
+                  <span className='text-[1rem]'>{t('office_tab', { ns: 'home' })}</span>
                 </li>
               ))}
             </ul>

@@ -2,7 +2,9 @@ import React, { useState } from 'react';
 import './apartment.css';
 import { tabData } from 'static/data';
 import AppartmentSwiper from '../../ui/AppartmentSwiper';
+import { useTranslation } from 'react-i18next';
 const Apartment = () => {
+  const { t } = useTranslation();
   const [activeTab, setActiveTab] = useState(0);
 
   const handleTabClick = index => {
@@ -14,7 +16,7 @@ const Apartment = () => {
       <div className='custom__container'>
         <div className='apartment__wrapper'>
           <div className='apartment__content flex justify-between '>
-            <h2 className='apartment__title'>KVARTIRANI TAQVIM QILISH VARIANTLARI</h2>
+            <h2 className='apartment__title'>{t('apartment_title', { ns: 'home' })}</h2>
             <ul className='flex'>
               {tabData.map((tab, index) => (
                 <li
@@ -25,7 +27,7 @@ const Apartment = () => {
                   onClick={() => handleTabClick(index)}
                 >
                   {tab.name}
-                  <span className='text-[1rem]'>xonali</span>
+                  <span className='text-[1rem]'>{t('apartment_tab', { ns: 'home' })}</span>
                 </li>
               ))}
             </ul>

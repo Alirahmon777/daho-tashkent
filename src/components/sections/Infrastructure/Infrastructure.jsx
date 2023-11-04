@@ -3,8 +3,10 @@ import './infrastructure.css';
 import { infrastructureCarousel } from '../../../static/data';
 import Swiper from '../../Swiper';
 import { SwiperSlide } from 'swiper/react';
+import { useTranslation } from 'react-i18next';
 
 const Infrastructure = () => {
+  const { t, i18n } = useTranslation();
   return (
     <section className='infrastructure'>
       <div className='infrastructure__wrapper flex md:flex-row flex-col-reverse items-center justify-between'>
@@ -36,12 +38,8 @@ const Infrastructure = () => {
           data-aos-duration='1100'
           data-aos-delay='300'
         >
-          <h2 className='advantages__title'>RIVOJLANGAN INFRATUZILMA</h2>
-          <p className='advantages__desc'>
-            DAhO majmuasida keng yerosti avtoturargohi, shuningdek, sport va dam olish joylari koʻzda tutilgan.
-            Majmuaning rezident va mehmonlari SPA-markaz xizmatlaridan foydalanishlari, fitnes zaliga tashrif
-            buyurishlari yoki yopiq basseynda choʻmilishdan bahra olishlari mumkin.
-          </p>
+          <h2 className='advantages__title'>{t('infrastructure_title', { ns: 'home' })}</h2>
+          <p className='advantages__desc'>{t('infrastructure_desc', { ns: 'home' })}</p>
         </div>
       </div>
     </section>

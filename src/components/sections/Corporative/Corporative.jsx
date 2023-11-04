@@ -4,8 +4,10 @@ import { corporativeOne } from 'assets';
 import { corporativCarousel } from '../../../static/data';
 import Swiper from '../../Swiper';
 import { SwiperSlide } from 'swiper/react';
+import { useTranslation } from 'react-i18next';
 
 const Corporative = () => {
+  const { t, i18n } = useTranslation();
   return (
     <section className='corporative'>
       <div className='corporative__wrapper flex items-center md:flex-row flex-col justify-between'>
@@ -19,12 +21,8 @@ const Corporative = () => {
           data-aos-duration='1000'
           data-aos-delay='300'
         >
-          <h2 className='advantages__title'>KORPORATIV KO‘CHMAS MULK</h2>
-          <p className='advantages__desc'>
-            DAhO majmuasidagi ikkita blok to'liq korporativ ko'chmas mulkka bag'ishlangan. Taklif etilayotgan makonning
-            turli xil variantlari turli faoliyat sohalaridagi kompaniyalar ofislari uchun maqbul joyni tanlash,
-            kovorking zonalarini yoki qulay konferentsiya zallarini tashkil qilish imkonini beradi.
-          </p>
+          <h2 className='advantages__title'>{t('corporative_title', { ns: 'home' })}</h2>
+          <p className='advantages__desc'>{t('corporative_desc', { ns: 'home' })}</p>
         </div>
         <div
           className='advantages__carousel'

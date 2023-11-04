@@ -3,8 +3,10 @@ import './progress.css';
 import { progressCarousel } from 'static/data';
 import Swiper from '../../Swiper';
 import { SwiperSlide } from 'swiper/react';
+import { useTranslation } from 'react-i18next';
 
 const Progress = () => {
+  const { t } = useTranslation();
   return (
     <section className='progress' id='concept'>
       <div className='custom__container flex items-center flex-col md:flex-row justify-between w-full !pr-0'>
@@ -18,16 +20,9 @@ const Progress = () => {
           data-aos-duration='800'
           data-aos-delay='300'
         >
-          <h2 className='progress__title'>TARAQQIYOT QIYOFASI</h2>
-          <p className='progress__desc'>
-            DAhO majmuasi rivojlangan infratuzilmaga ega Toshkentning nufuzli ishbilarmonlik tumanida — Said Baraka va
-            Taras Shevchenko ko‘chalari kesishmasida qad ko‘tarmoqda.
-          </p>
-          <p className='progress__desc'>
-            DAhO majmuasi binolarining tashqi qiyofasi o‘zining vizual yechimi bilan bir-biridan farq qiladi, birgalikda
-            esa ular o‘zaro uyg‘un va yakdil kompozitsiyani tashkil qiladi hamda munosib tarzda zamonaviy Toshkent uchun
-            noyob meʼmoriy ansambl nomzodligiga daʼvo qiladi.
-          </p>
+          <h2 className='progress__title'>{t('progress_title', { ns: 'home' })}</h2>
+          <p className='progress__desc'>{t('progress_desc_first', { ns: 'home' })}</p>
+          <p className='progress__desc'>{t('progress_desc_second', { ns: 'home' })}</p>
         </div>
         <div
           className='progress__carousel'

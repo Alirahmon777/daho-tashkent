@@ -12,8 +12,8 @@ const FeedbackModal = () => {
       <div className='feedback-content'>
         <div className='feedback-close' onClick={() => setOpenFeedback(false)}>
           <svg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'>
-            <path d='M1 23L23.0001 0.999929' stroke='white' stroke-width='2'></path>
-            <path d='M23 23L0.999929 0.999929' stroke='white' stroke-width='2'></path>
+            <path d='M1 23L23.0001 0.999929' stroke='white' strokeWidth='2'></path>
+            <path d='M23 23L0.999929 0.999929' stroke='white' strokeWidth='2'></path>
           </svg>
         </div>
 

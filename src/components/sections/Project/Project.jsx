@@ -1,8 +1,10 @@
 import React from 'react';
 import { projectImage } from 'assets';
 import './project.css';
+import { useTranslation } from 'react-i18next';
 
 const Project = () => {
+  const { t } = useTranslation();
   return (
     <section className='project' id='project'>
       <div className='project__content'>
@@ -16,7 +18,7 @@ const Project = () => {
           data-aos-duration='700'
           data-aos-once='true'
         >
-          MIXED-USE FORMATIDAGI LOYIHA
+          {t('project_title', { ns: 'home' })}
         </h2>
         <h3
           className='project__sub__title'
@@ -28,7 +30,7 @@ const Project = () => {
           data-aos-duration='900'
           data-aos-once='true'
         >
-          Hayot, biznes va investitsiya uchun
+          {t('project_subtitle', { ns: 'home' })}
         </h3>
         <p
           className='project__desc'
@@ -40,9 +42,7 @@ const Project = () => {
           data-aos-duration='1100'
           data-aos-once='true'
         >
-          DAhO majmuasi 5 ta blokdan iborat bo‘lib, apartamentlar, ofislar, ijtimoiy maydonlar, tijoriy maskanlar, sport
-          va dam olish joylarini o‘z ichiga oladi. DAhO apartamentlari yashash uchun ham, ko‘chmas mulkka qilingan
-          istiqbolli investitsiya uchun ham mukammal joy bo‘la oladi
+          {t('project_desc', { ns: 'home' })}
         </p>
       </div>
       <div

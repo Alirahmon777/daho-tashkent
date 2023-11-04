@@ -32,19 +32,19 @@ import {
 
 export const header = {
   nav: [
-    { component_id: '#home', name: 'Bosh Sahifa' },
-    { component_id: '#concept', name: 'Koncepciya' },
-    { component_id: '#project', name: 'Loyiha' },
-    { component_id: '#gallery', name: 'Galereya' },
+    { component_id: '#home', label: 'home' },
+    { component_id: '#concept', label: 'concept' },
+    { component_id: '#project', label: 'project' },
+    { component_id: '#gallery', label: 'gallery' },
     {
-      name: 'Planirovkalar',
+      label: 'plans',
       child: [
-        { component_id: '#apartments', name: 'Kvartiralar' },
-        { component_id: '#offices', name: 'Ofislar' },
+        { component_id: '#apartments', label: 'apartments' },
+        { component_id: '#offices', label: 'offices' },
       ],
     },
-    { component_id: '#location', name: 'Lokatsiya' },
-    { component_id: '#footer', name: 'Aloqa' },
+    { component_id: '#location', label: 'location' },
+    { component_id: '#footer', label: 'contact' },
   ],
 };
 
@@ -93,75 +93,75 @@ export const tabData = [
     name: '1-',
     content: [
       {
-        title: '1- xonali',
+        title: 'one_room_apartment_title',
         image: apartmentOneOne,
         info: [
           {
-            name: 'Umumiy maydoni',
+            name: 'room_total_area',
             metr: '43.67 m²',
           },
           {
-            name: 'Balkon',
+            name: 'room_balcony',
             metr: '4.58 m²',
           },
           {
-            name: 'Mehmonxona + Oshxona',
+            name: 'room_living_kitchen',
             metr: '29.87 m²',
           },
           {
-            name: 'Dahliz',
+            name: 'room_hallway',
             metr: '4.60 m²',
           },
           {
-            name: 'Hammom',
+            name: 'room_bath',
             metr: '4.62 m²',
           },
         ],
       },
       {
-        title: '1 - xonali',
+        title: 'one_room_apartment_title',
         image: apartmentOneTwo,
         info: [
           {
-            name: 'Umumiy maydoni',
+            name: 'room_total_area',
             metr: '40.97 m²',
           },
           {
-            name: 'Mehmonxona + Oshxona',
+            name: 'room_living_kitchen',
             metr: '30.76 m²',
           },
           {
-            name: 'Dahliz',
+            name: 'room_hallway',
             metr: '4.60 m²',
           },
           {
-            name: 'Hammom',
+            name: 'room_bath',
             metr: '4.62 m²',
           },
         ],
       },
       {
-        title: '1 - xonali',
+        title: 'one_room_apartment_title',
         image: apartmentOneThree,
         info: [
           {
-            name: 'Umumiy maydoni',
+            name: 'room_total_area',
             metr: '38.78 m²',
           },
           {
-            name: 'Balkon',
+            name: 'room_balcony',
             metr: '4.50 m²',
           },
           {
-            name: 'Mehmonxona + Oshxona',
+            name: 'room_living_kitchen',
             metr: '26.22 m²',
           },
           {
-            name: 'Dahliz',
+            name: 'room_hallway',
             metr: '4.72 m²',
           },
           {
-            name: 'Hammom',
+            name: 'room_bath',
             metr: '4.61 m²',
           },
         ],
@@ -172,100 +172,100 @@ export const tabData = [
     name: '2-',
     content: [
       {
-        title: '2 - xonali',
+        title: 'two_room_apartment_title',
         image: apartmentTwoOne,
         info: [
           {
-            name: 'Umumiy maydoni',
+            name: 'room_total_area',
             metr: '51.7 m²',
           },
           {
-            name: 'Balkon',
+            name: 'room_balcony',
             metr: '4.24 m²',
           },
           {
-            name: 'Mehmonxona',
+            name: 'room_living',
             metr: '17.57 m²',
           },
           {
-            name: 'Oshxona',
+            name: 'room_kitchen',
             metr: '4.27 m²',
           },
           {
-            name: 'Yotoqxona',
+            name: 'room_bed',
             metr: '14.42 m²',
           },
           {
-            name: 'Dahliz',
+            name: 'room_hallway',
             metr: '7.19 m²',
           },
           {
-            name: 'Hammom',
+            name: 'room_bath',
             metr: '4.01 m²',
           },
         ],
       },
       {
-        title: '2 - xonali',
+        title: 'two_room_apartment_title',
         image: apartmentTwoTwo,
         info: [
           {
-            name: 'Umumiy maydoni',
+            name: 'room_total_area',
             metr: '71.40 m²',
           },
           {
-            name: 'Balkon',
+            name: 'room_balcony',
             metr: '5.60 m²',
           },
           {
-            name: 'Mehmonxona',
+            name: 'room_living',
             metr: '30.36 m²',
           },
           {
-            name: 'Oshxona',
+            name: 'room_kitchen',
             metr: '8.19 m²',
           },
           {
-            name: 'Yotoqxona',
+            name: 'room_bed',
             metr: '17.31 m²',
           },
           {
-            name: 'Dahliz',
+            name: 'room_hallway',
             metr: '5.30 m²',
           },
           {
-            name: 'Hammom',
+            name: 'room_bath',
             metr: '5.00 m²',
           },
         ],
       },
       {
-        title: '2 - xonali',
+        title: 'two_room_apartment_title',
         image: apartmentTwoThree,
         info: [
           {
-            name: 'Umumiy maydoni',
+            name: 'room_total_area',
             metr: '53.28 m²',
           },
 
           {
-            name: 'Mehmonxona',
+            name: 'room_living',
             metr: '19.14 m²',
           },
           {
-            name: 'Oshxona',
+            name: 'room_kitchen',
             metr: '5.26 m²',
           },
           {
-            name: 'Yotoqxona',
+            name: 'room_bed',
             metr: '17.38 m²',
           },
           {
-            name: 'Dahliz',
+            name: 'room_hallway',
             metr: '5.01 m²',
           },
           {
-            name: 'Hammom',
+            name: 'room_bath',
             metr: '5.00 m²',
           },
         ],
@@ -276,127 +276,127 @@ export const tabData = [
     name: '3-',
     content: [
       {
-        title: '3 - xonali',
+        title: 'three_room_apartment_title',
         image: apartmentThreeOne,
         info: [
           {
-            name: 'Umumiy maydoni',
+            name: 'room_total_area',
             metr: '81.58 m²',
           },
           {
-            name: 'Balkon',
+            name: 'room_balcony',
             metr: '4.30 m²',
           },
           {
-            name: 'Mehmonxona',
+            name: 'room_living',
             metr: '16.83 m²',
           },
           {
-            name: 'Oshxona',
+            name: 'room_kitchen',
             metr: '7.60 m²',
           },
           {
-            name: 'Yotoqxona 1',
+            name: 'one_room_bed',
             metr: '18.49 m²',
           },
           {
-            name: 'Yotoqxona 2',
+            name: 'two_room_bed',
             metr: '12.20 m²',
           },
           {
-            name: 'Dahliz',
+            name: 'room_hallway',
             metr: '10.34 m²',
           },
           {
-            name: 'Hammom 1',
+            name: 'one_room_bath',
             metr: '5.23 m²',
           },
           {
-            name: 'Hammom 2',
+            name: 'two_room_bath',
             metr: '5.61 m²',
           },
         ],
       },
       {
-        title: '3 - xonali',
+        title: 'three_room_apartment_title',
         image: apartmentThreeOne,
         info: [
           {
-            name: 'Umumiy maydoni',
+            name: 'room_total_area',
             metr: '81.58 m²',
           },
           {
-            name: 'Balkon',
+            name: 'room_balcony',
             metr: '4.30 m²',
           },
           {
-            name: 'Mehmonxona',
+            name: 'room_living',
             metr: '16.83 m²',
           },
           {
-            name: 'Oshxona',
+            name: 'room_kitchen',
             metr: '7.60 m²',
           },
           {
-            name: 'Yotoqxona 1',
+            name: 'one_room_bed',
             metr: '18.49 m²',
           },
           {
-            name: 'Yotoqxona 2',
+            name: 'two_room_bed',
             metr: '12.20 m²',
           },
           {
-            name: 'Dahliz',
+            name: 'room_hallway',
             metr: '10.34 m²',
           },
           {
-            name: 'Hammom 1',
+            name: 'one_room_bath',
             metr: '5.23 m²',
           },
           {
-            name: 'Hammom 2',
+            name: 'two_room_bath',
             metr: '5.61 m²',
           },
         ],
       },
       {
-        title: '3 - xonali',
+        title: 'three_room_apartment_title',
         image: apartmentThreeOne,
         info: [
           {
-            name: 'Umumiy maydoni',
+            name: 'room_total_area',
             metr: '81.58 m²',
           },
           {
-            name: 'Balkon',
+            name: 'room_balcony',
             metr: '4.30 m²',
           },
           {
-            name: 'Mehmonxona',
+            name: 'room_living',
             metr: '16.83 m²',
           },
           {
-            name: 'Oshxona',
+            name: 'room_kitchen',
             metr: '7.60 m²',
           },
           {
-            name: 'Yotoqxona 1',
+            name: 'one_room_bed',
             metr: '18.49 m²',
           },
           {
-            name: 'Yotoqxona 2',
+            name: 'two_room_bed',
             metr: '12.20 m²',
           },
           {
-            name: 'Dahliz',
+            name: 'room_hallway',
             metr: '10.34 m²',
           },
           {
-            name: 'Hammom 1',
+            name: 'one_room_bath',
             metr: '5.23 m²',
           },
           {
-            name: 'Hammom 2',
+            name: 'two_room_bath',
             metr: '5.61 m²',
           },
         ],
@@ -410,15 +410,15 @@ export const officeTabData = [
     name: '01',
     content: [
       {
-        title: '1 ofis',
+        title: 'one_room_office_title',
         image: officeOne,
         info: [
           {
-            name: 'Umimiy maydoni',
+            name: 'room_total_area',
             metr: '110.71 m²',
           },
           {
-            name: 'Shift balandligi',
+            name: 'room_ceiling_height',
             metr: '4.5 m²',
           },
         ],
@@ -429,15 +429,15 @@ export const officeTabData = [
     name: '02',
     content: [
       {
-        title: '2 ofis',
+        title: 'two_room_office_title',
         image: officeTwo,
         info: [
           {
-            name: 'Umimiy maydoni',
+            name: 'room_total_area',
             metr: '60.91 m²',
           },
           {
-            name: 'Shift balandligi',
+            name: 'room_ceiling_height',
             metr: '4.5 m²',
           },
         ],
@@ -448,15 +448,15 @@ export const officeTabData = [
     name: '03',
     content: [
       {
-        title: '3 ofis',
+        title: 'three_room_office_title',
         image: officeThree,
         info: [
           {
-            name: 'Umimiy maydoni',
+            name: 'room_total_area',
             metr: '60.91 m²',
           },
           {
-            name: 'Shift balandligi',
+            name: 'room_ceiling_height',
             metr: '4.5 m²',
           },
         ],
@@ -467,15 +467,15 @@ export const officeTabData = [
     name: '04',
     content: [
       {
-        title: '4 ofis',
+        title: 'four_room_office_title',
         image: officeFour,
         info: [
           {
-            name: 'Umimiy maydoni',
+            name: 'room_total_area',
             metr: '64.16 m²',
           },
           {
-            name: 'Shift balandligi',
+            name: 'room_ceiling_height',
             metr: '4.5 m²',
           },
         ],

@@ -13,7 +13,7 @@ import {
 
 const Main = () => {
   return (
-    <main>
+    <>
       <HeroSection />
       <ProgressSection />
       <ProjectSection />
@@ -23,7 +23,7 @@ const Main = () => {
       <OfficeSection />
       <InfrastructureSection />
       <LocationSection />
-    </main>
+    </>
   );
 };
 

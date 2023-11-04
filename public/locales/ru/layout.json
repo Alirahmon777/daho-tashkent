@@ -1,0 +1,16 @@
+{
+  "home": "Главная",
+  "concept": "Концепция",
+  "project": "Проект",
+  "gallery": "Галерея",
+  "plans": "Планировки",
+  "apartments": "Квартиры",
+  "offices": "Офисы",
+  "location": "Локация",
+  "contact": "Контакты",
+  "header_btn": "Оставить заявку",
+  "footer_address_span": "Адрес:",
+  "footer_address": "Улица Тараса Шевченко, 23",
+  "footer_tel": "Телефон:",
+  "footer_email": "Email:"
+}

@@ -41,6 +41,24 @@
   }
 }
 
+@keyframes fillHeight {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 100%;
+  }
+}
+
+@keyframes fillWidth {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
 @keyframes scale {
   50% {
     -webkit-transform: scale(1.2);
