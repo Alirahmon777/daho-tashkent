@@ -1,8 +1,15 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import 'assets/styles/feedback.css';
 import { FeedbackContext } from '../../context/FeedbackContext';
+import { PhoneInput } from 'react-international-phone';
+import 'react-international-phone/style.css';
 const FeedbackModal = () => {
   const { openFeedback, setOpenFeedback } = useContext(FeedbackContext);
+  const [phoneNumber, setPhoneNumber] = useState('');
+
+  const handlePhoneNumberChange = value => {
+    setPhoneNumber(value);
+  };
   return (
     <div className={`feedback ${openFeedback ? 'open' : ''}`}>
       <div
@@ -22,16 +29,12 @@ const FeedbackModal = () => {
           <div className='feedback__text'>Formani to‘ldiring va menejerlarimiz siz bilan bog'lanishadi</div>
           <form className='feedback-form' action='#'>
             <div className='feedback-form__input'>
-              <input id='token' value='oXO0GfRCh1glXcupUaGHAcHRUtxgXtEFXRywmUMW' type='hidden' />
-              <span>Telefon raqamingiz</span>
-            </div>
-            <div className='feedback-form__input'>
               <span>Ismingiz</span>
               <input type='text' required='' placeholder='Ismingiz' id='name' />
             </div>
             <div className='feedback-form__input'>
-              <span>Familiyangiz</span>
-              <input type='text' required='' placeholder='Familiyangiz' id='surname' />
+              <span>Telefon raqamingiz</span>
+              <PhoneInput defaultCountry='uz' value={phoneNumber} onChange={handlePhoneNumberChange} className='' />
             </div>
           </form>
           <div className='feedback__text'>

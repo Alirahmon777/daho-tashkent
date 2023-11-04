@@ -1,11 +1,13 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { footer, header } from '../static/data';
 import { Link, NavLink } from 'react-router-dom';
 import { novaIcon } from 'assets';
 import { scrollToComponent } from '../utils/scrollToComponents';
 import { useTranslation } from 'react-i18next';
+import { FeedbackContext } from '../context/FeedbackContext';
 
 const MobileMenu = ({ open, setOpen }) => {
+  const { setOpenFeedback } = useContext(FeedbackContext);
   const { t, i18n } = useTranslation();
   return (
     <div className={`mobile-menu md:hidden ${open ? 'open' : ''}`}>
@@ -53,7 +55,10 @@ const MobileMenu = ({ open, setOpen }) => {
           </a>
         </div>
         <div className='header-tel mt-5'>
-          <button className='bg-[var(--brown)] border-[0.1rem] text-white border-white px-[20px] py-1 text-[1rem]'>
+          <button
+            className='bg-[var(--brown)] border-[0.1rem] text-white border-white px-[20px] py-1 text-[1rem]'
+            onClick={() => setOpenFeedback(true)}
+          >
             {t('header_btn', { ns: 'layout' })}
           </button>
         </div>

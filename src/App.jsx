@@ -2,7 +2,7 @@ import { Suspense, useEffect, useState } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Loader from './components/Loader';
-import { Route, Routes } from 'react-router-dom';
+import { Route, Routes, useNavigate } from 'react-router-dom';
 import Layout from './layouts/default';
 import HomePage from './pages/Home/HomePage';
 import { routes } from './routes/routes';
@@ -13,6 +13,7 @@ import { useTranslation } from 'react-i18next';
 function App() {
   const [showLoader, setShowLoader] = useState(true);
   const { i18n } = useTranslation();
+  const navigate = useNavigate();
 
   useEffect(() => {
     AOS.init();
@@ -28,6 +29,15 @@ function App() {
       clearTimeout(timer);
     };
   }, [i18n.resolvedLanguage]);
+
+  useEffect(() => {
+    const currentLang = window.location.pathname.split('/')[1];
+    const isValidLang = SUPPORTED_LANGS.includes(currentLang);
+
+    if (!isValidLang) {
+      navigate(`/`);
+    }
+  }, [navigate]);
 
   return (
     <>

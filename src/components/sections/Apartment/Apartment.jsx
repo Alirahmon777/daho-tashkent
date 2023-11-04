@@ -15,7 +15,7 @@ const Apartment = () => {
     <section className='apartment' id='apartments'>
       <div className='custom__container'>
         <div className='apartment__wrapper'>
-          <div className='apartment__content flex justify-between '>
+          <div className='apartment__content flex justify-between items-center'>
             <h2 className='apartment__title'>{t('apartment_title', { ns: 'home' })}</h2>
             <ul className='flex'>
               {tabData.map((tab, index) => (
