@@ -12,5 +12,11 @@
   "footer_address_span": "Manzil:",
   "footer_address": "Taras Shevchenko ko'chasi, 23-uy",
   "footer_tel": "Telefon:",
-  "footer_email": "Email:"
+  "footer_email": "Email:",
+  "feedback_title": "Qayta qo'ng'iroq",
+  "feedback_desc": "Formani to‘ldiring va menejerlarimiz siz bilan bog'lanishadi",
+  "feedback_tel": "Telefon raqamingiz",
+  "feedback_name": "Ismingiz",
+  "feedback_text": "\"So'rov yuborish\" tugmasini bosish orqali siz shaxsiy ma'lumotlarni qayta ishlashga roziligingizni tasdiqlaysiz",
+  "feedback_btn": "Yuborish"
 }

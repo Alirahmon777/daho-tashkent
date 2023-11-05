@@ -47,7 +47,7 @@ const Footer = () => {
           </Link>
           <p className='footer__privacy'>
             Terms & Condition |{' '}
-            <Link to={'/policy'} className='hover:text-[var(--blue)] transition-all duration-500'>
+            <Link to={'policy'} className='hover:text-[var(--blue)] transition-all duration-500'>
               Privacy Policy
             </Link>
           </p>

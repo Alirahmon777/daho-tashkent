@@ -5,7 +5,7 @@ import { FeedbackContext } from '../../../context/FeedbackContext';
 import { useTranslation } from 'react-i18next';
 
 const Location = () => {
-  const { setOpenFeedback } = useContext(FeedbackContext);
+  const { setOpenFeedback, setOpenFeedbackDone } = useContext(FeedbackContext);
   const { t, i18n } = useTranslation();
   return (
     <section className='location' id='location'>
@@ -16,13 +16,18 @@ const Location = () => {
           data-aos='fade-right'
           data-aos-easing='ease-in-sine'
           data-aos-once='true'
-          data-aos-offset='400'
+          data-aos-offset='250'
           data-aos-duration='800'
           data-aos-delay='300'
         >
           <h2 className='location__title'>{t('location_title', { ns: 'home' })}</h2>
           <p className='location__desc'>{t('location_desc', { ns: 'home' })}</p>
-          <button className='location__btn' onClick={() => setOpenFeedback(true)}>
+          <button
+            className='location__btn'
+            onClick={() => {
+              setOpenFeedback(true), setOpenFeedbackDone(false);
+            }}
+          >
             {t('header_btn', { ns: 'layout' })}
           </button>
         </div>
@@ -31,7 +36,7 @@ const Location = () => {
           style={{ animationName: 'fadeInRight', animationDelay: '400' }}
           data-aos='fade-left'
           data-aos-easing='ease-out'
-          data-aos-offset='400'
+          data-aos-offset='250'
           data-aos-once='true'
           data-aos-duration='800'
           data-aos-delay='300'

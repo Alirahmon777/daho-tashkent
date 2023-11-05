@@ -17,7 +17,7 @@ const Corporative = () => {
           data-aos='fade-right'
           data-aos-easing='ease-in-sine'
           data-aos-once='true'
-          data-aos-offset='400'
+          data-aos-offset='250'
           data-aos-duration='1000'
           data-aos-delay='300'
         >
@@ -30,7 +30,7 @@ const Corporative = () => {
           data-aos='fade-left'
           data-aos-easing='ease-out'
           data-aos-once='true'
-          data-aos-offset='400'
+          data-aos-offset='250'
           data-aos-duration='1100'
           data-aos-delay='300'
         >

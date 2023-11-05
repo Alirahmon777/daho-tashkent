@@ -11,7 +11,7 @@ import { useTranslation } from 'react-i18next';
 const Header = () => {
   const [open, setOpen] = useState(false);
   const [scrollTop, setScrollTop] = useState(false);
-  const { setOpenFeedback } = useContext(FeedbackContext);
+  const { setOpenFeedback, setOpenFeedbackDone } = useContext(FeedbackContext);
   const { t, i18n } = useTranslation();
 
   useEffect(() => {
@@ -31,6 +31,7 @@ const Header = () => {
       <header className={`${scrollTop && 'scrolled'} header text-white fixed top-0 left-0 w-full z-50 py-[1.25rem]`}>
         <div className='custom__container flex items-center justify-between w-full'>
           <img src={LogoIcon} alt='logo' className={`transition-all duration-[600] header__logo`} />
+
           <nav className='hidden md:block'>
             <ul className='header__menu flex items-center'>
               {header.nav.map(({ component_id, label, child }, i) => (
@@ -86,7 +87,9 @@ const Header = () => {
               55 506 00 00
             </Link>
             <button
-              onClick={() => setOpenFeedback(true)}
+              onClick={() => {
+                setOpenFeedback(true), setOpenFeedbackDone(false);
+              }}
               className='bg-[var(--brown)] border-[0.1rem] border-white px-[16px] lg:px-[24px] py-[2px] text-[0.5rem] lg:text-[0.7rem] 2xl:text-[0.8rem]'
             >
               {t('header_btn', { ns: 'layout' })}

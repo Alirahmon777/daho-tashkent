@@ -22,6 +22,7 @@
 ::after,
 ::before {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 html {
@@ -137,6 +138,13 @@ body {
   right: 0;
   -webkit-animation: fillHeight 2s linear forwards;
   animation: fillHeight 2s linear forwards;
+}
+
+.notfound {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #1a202c;
 }
 
 @media (max-width: 2800.98px) {

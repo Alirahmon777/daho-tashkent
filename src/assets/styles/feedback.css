@@ -41,12 +41,29 @@
 .feedback-wrap {
   padding: 2rem 2.5rem;
   border: 0.2rem solid #c99e66;
+  transition: all 0.2s ease-out;
 }
+
+.feedback-wrap.close {
+  opacity: 0;
+  pointer-events: none;
+  display: none;
+}
+
 .feedback-done {
   padding: 2rem 2.5rem;
   border: 0.2rem solid #c99e66;
   display: none;
+  pointer-events: none;
 }
+
+.feedback-done.open {
+  pointer-events: all;
+  display: block;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
 .feedback__title {
   font-size: 1.25rem;
   font-family: 'Din Pro', sans-serif;
@@ -152,6 +169,10 @@
   background: transparent !important;
 }
 .feedback__img {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
   margin: 3rem 0 2rem;
 }

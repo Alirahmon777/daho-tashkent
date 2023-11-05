@@ -3,4 +3,7 @@ export const scrollToComponent = componentId => {
   if (element) {
     element.scrollIntoView({ behavior: 'smooth' });
   }
+  if (componentId == '/') {
+    window.scrollTo(0, 0);
+  }
 };

@@ -14,7 +14,7 @@ const Project = () => {
           style={{ animationName: 'fadeInUp', animationDelay: '0.2s' }}
           data-aos='fade-up'
           data-aos-easing='ease'
-          data-aos-offset='400'
+          data-aos-offset='250'
           data-aos-duration='700'
           data-aos-once='true'
         >
@@ -26,7 +26,7 @@ const Project = () => {
           data-aos='fade-up'
           style={{ animationName: 'fadeInUp', animationDelay: '0.3s' }}
           data-aos-easing='ease'
-          data-aos-offset='400'
+          data-aos-offset='250'
           data-aos-duration='900'
           data-aos-once='true'
         >
@@ -38,7 +38,7 @@ const Project = () => {
           style={{ animationName: 'fadeInUp', animationDelay: '0.4s' }}
           data-aos='fade-up'
           data-aos-easing='ease'
-          data-aos-offset='400'
+          data-aos-offset='250'
           data-aos-duration='1100'
           data-aos-once='true'
         >
@@ -51,7 +51,7 @@ const Project = () => {
         style={{ animationName: 'fadeInUp', animationDelay: '0.5s' }}
         data-aos='fade-up'
         data-aos-easing='ease'
-        data-aos-offset='400'
+        data-aos-offset='250'
         data-aos-duration='1300'
         data-aos-once='true'
       >

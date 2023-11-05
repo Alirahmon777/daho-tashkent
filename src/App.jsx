@@ -2,13 +2,12 @@ import { Suspense, useEffect, useState } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Loader from './components/Loader';
-import { Route, Routes, useNavigate } from 'react-router-dom';
+import { Route, Routes, useNavigate, useLocation } from 'react-router-dom';
 import Layout from './layouts/default';
 import HomePage from './pages/Home/HomePage';
 import { routes } from './routes/routes';
 import { v4 } from 'uuid';
 import NotFound from './pages/NotFound/NotFound';
-import { SUPPORTED_LANGS } from './helpers/constants';
 import { useTranslation } from 'react-i18next';
 function App() {
   const [showLoader, setShowLoader] = useState(true);
@@ -30,14 +29,17 @@ function App() {
     };
   }, [i18n.resolvedLanguage]);
 
-  useEffect(() => {
-    const currentLang = window.location.pathname.split('/')[1];
-    const isValidLang = SUPPORTED_LANGS.includes(currentLang);
+  let location = useLocation();
 
-    if (!isValidLang) {
-      navigate(`/`);
+  useEffect(() => {
+    console.log(location.pathname);
+    if (location.pathname == '/' || !location.pathname.includes('uz')) {
+      i18n.changeLanguage('ru');
     }
-  }, [navigate]);
+    if (location.pathname.includes('uz')) {
+      i18n.changeLanguage('uz');
+    }
+  }, [i18n]);
 
   return (
     <>
@@ -46,7 +48,15 @@ function App() {
       <Suspense fallback={<Loader showLoader={showLoader} />}>
         <Routes>
           <Route
-            path={`/:lang?`}
+            path={`/`}
+            element={
+              <Layout>
+                <HomePage />
+              </Layout>
+            }
+          />
+          <Route
+            path={`/uz`}
             element={
               <Layout>
                 <HomePage />

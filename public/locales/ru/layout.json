@@ -12,5 +12,11 @@
   "footer_address_span": "Адрес:",
   "footer_address": "Улица Тараса Шевченко, 23",
   "footer_tel": "Телефон:",
-  "footer_email": "Email:"
+  "footer_email": "Email:",
+  "feedback_title": "Обратный звонок",
+  "feedback_desc": "Заполните форму, и наши менеджеры свяжутся с вами",
+  "feedback_tel": "Номер телефона",
+  "feedback_name": "Ваше имя",
+  "feedback_text": "Нажимая кнопку «Отправить заявку», вы подтверждаете свое согласие на обработку персональных данных",
+  "feedback_btn": "Отправить заявку"
 }

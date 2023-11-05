@@ -7,7 +7,7 @@ import { useTranslation } from 'react-i18next';
 import { FeedbackContext } from '../context/FeedbackContext';
 
 const MobileMenu = ({ open, setOpen }) => {
-  const { setOpenFeedback } = useContext(FeedbackContext);
+  const { setOpenFeedback, setOpenFeedbackDone } = useContext(FeedbackContext);
   const { t, i18n } = useTranslation();
   return (
     <div className={`mobile-menu md:hidden ${open ? 'open' : ''}`}>
@@ -57,7 +57,9 @@ const MobileMenu = ({ open, setOpen }) => {
         <div className='header-tel mt-5'>
           <button
             className='bg-[var(--brown)] border-[0.1rem] text-white border-white px-[20px] py-1 text-[1rem]'
-            onClick={() => setOpenFeedback(true)}
+            onClick={() => {
+              setOpenFeedback(true), setOpenFeedbackDone(false);
+            }}
           >
             {t('header_btn', { ns: 'layout' })}
           </button>
