@@ -71,7 +71,7 @@ body {
   width: 100%;
   opacity: 0;
   height: 100%;
-  background: #142939;
+  background: #fff;
   padding: 2rem;
   pointer-events: none;
   transition: all 0.4s ease-in;
@@ -98,7 +98,7 @@ body {
 }
 
 .preloader-lines span {
-  background: #c99e66;
+  background: var(--blue);
 }
 
 .preloader-lines span:nth-child(1) {

@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
-import { LogoIcon, phoneIcon } from 'assets';
+import { LogoIcon, PhoneIcon } from 'assets';
 import { header } from 'static/data';
 import 'assets/styles/header.css';
 import MobileMenu from '../MobileMenu';
@@ -71,10 +71,10 @@ const Header = () => {
             </ul>
           </nav>
           <div className='header__lang__box hidden md:flex text-[0.6rem] md:text-[0.8rem] lg:text-[0.9rem] 2xl:text-[1rem]'>
-            <a href='/' className='mr-[0.7rem] hover:text-[--brown] transition-all duration-500'>
+            <a href='/' className='mr-[0.7rem] header__lang-link'>
               Ру
             </a>
-            <a href='/uz' className='hover:text-[--brown] transition-all duration-500'>
+            <a href='/uz' className='header__lang-link'>
               Uz
             </a>
           </div>
@@ -83,7 +83,7 @@ const Header = () => {
               to='tel:555060000'
               className='flex gap-2 lg:gap-4 items-center font-bold text-[0.7rem] lg:text-[1.1rem] 2xl:text-[1.25rem]'
             >
-              <img src={phoneIcon} alt='' width={19} height={20} className='w-[0.9rem] h-[20px]' />
+              <PhoneIcon className={`w-[0.9rem] h-[18px] ${scrollTop ? 'fill-[--blue]' : ''}`} />
               55 506 00 00
             </Link>
             <button

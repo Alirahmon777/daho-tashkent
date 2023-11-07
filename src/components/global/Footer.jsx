@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FooterLogoIcon, novaIcon } from 'assets';
+import { LogoIcon, novaIcon } from 'assets';
 import 'assets/styles/footer.css';
 import { footer } from 'static/data';
 import { useTranslation } from 'react-i18next';
@@ -11,7 +11,7 @@ const Footer = () => {
     <footer className='footer' id='footer'>
       <div className='footer__content'>
         <div className='footer__info'>
-          <img src={FooterLogoIcon} alt='' className='footer__logo' />
+          <img src={LogoIcon} alt='' className='footer__logo' />
           <ul className='footer__socials flex justify-center gap-1.5'>
             {footer.socials.map(({ path, icon: Icon }, i) => (
               <li className='footer__item' key={i}>

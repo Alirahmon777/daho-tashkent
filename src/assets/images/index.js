@@ -1,7 +1,7 @@
-export { default as heroOne } from './hero-one.webp';
-export { default as heroTwo } from './hero-two.webp';
-export { default as heroThree } from './hero-three.webp';
-export { default as heroFour } from './hero-four.webp';
+export { default as heroOne } from './hero-one.jpg';
+export { default as heroTwo } from './hero-two.jpg';
+export { default as heroThree } from './hero-three.jpg';
+export { default as heroFour } from './hero-four.jpg';
 export { default as progressOne } from './progress-one.webp';
 export { default as progressTwo } from './progress-two.webp';
 export { default as projectImage } from './project.webp';

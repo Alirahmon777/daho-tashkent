@@ -1,6 +1,7 @@
 export { default as phoneIcon } from './phone.svg';
 export { default as novaIcon } from './nova.svg';
 export { default as doneIcon } from './done.svg';
+export { default as PhoneIcon } from './Phone';
 export { default as FacebookIcon } from './Facebook';
 export { default as LinkedinIcon } from './In';
 export { default as InstagramIcon } from './Instagram';
