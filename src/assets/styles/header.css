@@ -123,6 +123,10 @@
     padding: 0.7rem 0.4rem;
   }
 
+  .header.scrolled .header__mobile {
+    border-color: var(--blue);
+  }
+
   .header__mobile span {
     width: 2.2rem;
     display: block;
@@ -131,6 +135,10 @@
     border-radius: 4px;
     -webkit-transition: 0.4s all;
     transition: 0.4s all;
+  }
+
+  .header.scrolled .header__mobile span {
+    background: var(--blue);
   }
 
   .header__mobile span:nth-child(2) {
@@ -165,7 +173,7 @@
   }
 
   .mobile-menu__wrap {
-    padding: 6.5rem 2rem;
+    padding: 8rem 2rem;
   }
 
   .mobile-menu .footer-info__social {

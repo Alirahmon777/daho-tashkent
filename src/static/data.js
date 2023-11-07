@@ -12,6 +12,7 @@ import {
   progressTwo,
   advantagesOne,
   advantagesTwo,
+  advantagesThree,
   corporativeOne,
   corporativeTwo,
   infrastructureOne,
@@ -63,7 +64,7 @@ export const progressCarousel = [
 export const advantagesCarousel = [
   { image: advantagesOne, name: 'advantages image' },
   { image: advantagesTwo, name: 'advantages image' },
-  { image: heroThree, name: 'advantages image' },
+  { image: advantagesThree, name: 'advantages image' },
 ];
 
 export const corporativCarousel = [

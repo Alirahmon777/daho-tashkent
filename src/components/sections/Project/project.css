@@ -61,6 +61,10 @@
   animation: scale 40s linear infinite;
 }
 
+.project__image {
+  max-height: 38rem;
+}
+
 .project__desc {
   color: var(--blue);
 }
