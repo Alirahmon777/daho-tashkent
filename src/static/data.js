@@ -14,7 +14,6 @@ import {
   advantagesTwo,
   advantagesThree,
   corporativeOne,
-  corporativeTwo,
   infrastructureOne,
   infrastructureTwo,
   infrastructureThree,
@@ -69,7 +68,6 @@ export const advantagesCarousel = [
 
 export const corporativCarousel = [
   { image: corporativeOne, name: 'corporative image' },
-  { image: corporativeTwo, name: 'corporative image' },
   { image: heroFour, name: 'corporative image' },
 ];
 

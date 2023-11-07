@@ -9,7 +9,6 @@ export { default as advantagesOne } from './advantages-one.webp';
 export { default as advantagesTwo } from './advantages-two.webp';
 export { default as advantagesThree } from './advantages-three.jpg';
 export { default as corporativeOne } from './corporativ-one.webp';
-export { default as corporativeTwo } from './corporativ-two.webp';
 export { default as infrastructureOne } from './infrastructure-one.webp';
 export { default as infrastructureTwo } from './infrastructure-two.webp';
 export { default as infrastructureThree } from './infrastructure-three.webp';
