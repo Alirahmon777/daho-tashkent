@@ -64,11 +64,7 @@ const MobileMenu = ({ open, setOpen }) => {
             {t('header_btn', { ns: 'layout' })}
           </button>
         </div>
-        <div className='mobile-menu__nova flex justify-center items-center mt-4'>
-          <a href='https://www.novastudio.uz/' target='_blank'>
-            <img src={novaIcon} alt='Nova' />
-          </a>
-        </div>
+
         <ul className='footer-info__social'>
           {footer.socials.map(({ path, icon: Icon }, i) => (
             <li className='footer__item' key={i}>

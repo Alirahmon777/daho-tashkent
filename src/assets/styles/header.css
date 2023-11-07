@@ -84,13 +84,17 @@
   height: 100%;
   z-index: 10;
   overflow: hidden;
-  background: #00263a;
+  background: #fff;
   transition: transform 0.6s ease-in-out;
   transform: translateY(-100%);
 }
 
 .mobile-menu.open {
   transform: translateY(0);
+}
+
+.mobile-menu a {
+  color: var(--blue);
 }
 
 .footer-info__social {
